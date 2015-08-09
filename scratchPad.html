@@ -1,0 +1,16 @@
+<html>
+<head>
+  <script src="scratchPad.js" charset="utf-8"></script>
+  <script>
+    function onClick(){
+      alert("Hi!");
+      myBlob = new blob("red", "syrupy", "greasy");
+      food = prompt("feed the " + myBlob.desc + " blob!" , "potato");
+      sayIt = myBlob.eats(food);
+      alert(sayIt);
+    }
+  </script>
+
+</head>
+<div id="thing" style="width:40; height:40; background-color:blue" onclick="onClick()"> </div>
+</html>

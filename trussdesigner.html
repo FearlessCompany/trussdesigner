@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script src="trussobject.js"></script>
+  <script src="viewport.js" ></script>
+  <script src="tools.js" ></script>
+  <script src="trussdesigner.js" > </script>
+  <script >
+    function startUp() {
+      can = document.getElementById("trussDesigner");
+      view = new viewport(0, 0, 0, 40, 40, 40, 0, 0, 0)
+      drawGrid(can);
+    }
+  </script>
+</head>
+<body onload="startUp()">
+<div id="toolBar" style="positon:absolute; top: 0px; left:0px; background-color:blue; height:900px; width:82px"> </div>
+<canvas id="trussDesigner" height="900" width="1200" style="position:absolute; top:8px; left:95px; background-color:#aaaaaa"> </canvas>
+</body>
+</html>
